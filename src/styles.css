@@ -1,0 +1,50 @@
+.lp-stack {
+  --lp-stack-accent: #2563eb;
+  --lp-stack-border: #b8c2d0;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+  color: #172033;
+  background: #fff;
+  border: 1px solid var(--lp-stack-border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.lp-stack h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+.lp-stack button {
+  padding: 0.4rem;
+  color: inherit;
+  background: #f1f5f9;
+  border: 1px solid var(--lp-stack-border);
+  cursor: pointer;
+}
+.lp-stack button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+.lp-stack :focus-visible {
+  outline: 2px solid var(--lp-stack-accent);
+  outline-offset: 3px;
+}
+.lp-stack-group {
+  margin-bottom: 1rem;
+}
+.lp-stack li {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--lp-stack-border);
+}
+.lp-stack li[data-selected='true'] {
+  background: #eff6ff;
+}
+.lp-stack-frame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  overflow-wrap: anywhere;
+}
+.lp-stack a {
+  color: var(--lp-stack-accent);
+}
